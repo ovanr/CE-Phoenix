@@ -49,7 +49,7 @@ EOERROR
       $link = str_replace('&&', '&', $link);
     }
 
-    return $link;
+    return urlencode($link);
   }
 
   function tep_catalog_href_link($page = '', $parameters = '', $connection = 'NONSSL') {
